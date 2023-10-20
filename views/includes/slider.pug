@@ -1,0 +1,15 @@
+#carouselExampleIndicators.carousel.slide
+    .carousel-indicators
+        button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+    .carousel-inner
+        .carousel-item.active
+            img.d-block.w-100(src='https://placehold.co/900x400')
+        .carousel-item
+            img.d-block.w-100(src='https://placehold.co/900x400')
+    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+    button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next

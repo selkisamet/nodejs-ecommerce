@@ -1,0 +1,20 @@
+extend ../layouts/main-layout.pug
+
+block content
+
+    div.row
+        div.col-lg-3
+            img(src=`${product.imageUrl}` alt=`${product.description}`).img-fluid
+
+        div.col-lg-9
+            h1 #{product.name}
+            hr
+            a(href="").btn.btn-link.p-0 Telefon
+            div
+                h4.text-primary #{product.price} TL
+                button(type="submit").btn.btn-primary.btn-sm Add to Car
+
+    div.row
+        .col-lg-12
+            hr
+            p.p-2 #{product.description}

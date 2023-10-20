@@ -1,0 +1,29 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+    div.container
+        a(href="/").navbar-brand Shoppinga
+
+        div.d-flex.w-100.justify-content-between
+            ul.navbar-nav.float-start
+                li.navbar-item.active
+                    a(href="/", class=(path === "/" ? "active" : "")).nav-link Home
+                    
+                    li.navbar-item.active
+                        a(href="/products", class=(path === "/products" ? "active" : "")).nav-link Products
+
+                    li.navbar-item.active
+                        a(href="/cart", class=(path === "/cart" ? "active" : "")).nav-link Cart
+
+                    li.navbar-item.active
+                        a(href="/orders", class=(path === "/orders" ? "active" : "")).nav-link Orders
+
+                li.navbar-item
+                    a(href="/admin/add-product", class=(path === "/admin/add-product" ? "active" : "")).nav-link Add Product
+
+                li.navbar-item
+                    a(href="/admin/products", class=(path === "/admin/products" ? "active" : "")).nav-link Admin Products
+
+            ul.navbar-nav.float-end
+                li.navbar-item.active
+                    a(href="#").nav-link Login
+                li.navbar-item
+                    a(href="#").nav-link Register
